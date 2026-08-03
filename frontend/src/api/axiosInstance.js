@@ -6,7 +6,7 @@ const getApiBaseUrl = () => {
   if (isLocal) {
     return import.meta.env.VITE_LOCAL_API_URL || 'http://localhost:5000/api/v1';
   }
-  return import.meta.env.VITE_API_URL || import.meta.env.VITE_API_BASE_URL || 'https://ticket-booking-backend-2qcd.onrender.com/api/v1';
+  return import.meta.env.VITE_API_URL || import.meta.env.VITE_API_BASE_URL || 'https://ticket-booking-backend-pdjz.onrender.com/api/v1';
 };
 
 const BASE_URL = getApiBaseUrl();
