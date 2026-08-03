@@ -1,0 +1,30 @@
+# Root .gitignore — protect secrets
+credential.json
+*.json.key
+.env
+.env.*
+!.env.example
+
+# Node
+node_modules/
+npm-debug.log*
+
+# Build outputs
+dist/
+build/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Implementation docs (internal dev notes)
+implementation_plan.md
+phase*implementation_plan.md
+phase*walkthrough.md
+*walkthrough.md
+render.yaml
+render.yml
