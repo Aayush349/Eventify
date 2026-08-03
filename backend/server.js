@@ -37,7 +37,7 @@ app.use(xss()); // Prevent XSS attacks
 // ─── CORS ─────────────────────────────────────────────────────────────────────
 const allowedOrigins = [
   'http://localhost:5173',
-  'https://ticket-booking-frontend-1ola.onrender.com',
+  'https://ticket-booking-frontend-ur2r.onrender.com',
   process.env.CLIENT_URL,
 ].filter(Boolean);
 
