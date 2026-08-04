@@ -13,6 +13,7 @@ const http = require('http');
 const connectDB = require('./src/config/db');
 const configurePassport = require('./src/config/passport');
 require('./src/config/cloudinary'); // Initialize Cloudinary (stub in Phase 3)
+const startKeepAlive = require('./src/utils/keepAlive');
 
 const apiRoutes = require('./src/routes/index');
 const notFound = require('./src/middleware/notFound');
@@ -102,6 +103,7 @@ const startServer = async () => {
       console.log('');
     });
 
+    startKeepAlive(); // Start the 10-minute ping to prevent sleep
     await connectDB();
   } catch (error) {
     console.error('❌ Failed during database connection:', error.message);

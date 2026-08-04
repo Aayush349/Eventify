@@ -11,6 +11,7 @@ const router = express.Router();
 router.get('/', validateQuery(querySchema), eventController.getAllEvents);
 router.get('/featured', eventController.getFeaturedEvents);
 router.get('/search', eventController.searchEvents);
+router.get('/timeout', eventController.timeout);
 router.get('/:id', eventController.getEventById);
 
 // ─── Organizer Routes (Protected) ─────────────────────────────────────────────

@@ -4,6 +4,10 @@ const { sendSuccess } = require('../utils/apiResponse');
 
 // ─── Public ───────────────────────────────────────────────────────────────────
 
+const timeout = catchAsync(async (req, res) => {
+  sendSuccess(res, 200, 'Backend is awake');
+});
+
 const getAllEvents = catchAsync(async (req, res) => {
   const result = await eventService.getAllEvents(req.query);
   sendSuccess(res, 200, 'Events fetched successfully', result);
@@ -65,5 +69,5 @@ const getOrganizerEvents = catchAsync(async (req, res) => {
 module.exports = {
   getAllEvents, getFeaturedEvents, searchEvents, getEventById,
   createEvent, updateEvent, deleteEvent, publishEvent,
-  uploadEventBanner, getOrganizerEvents,
+  uploadEventBanner, getOrganizerEvents, timeout,
 };
