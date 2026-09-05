@@ -1,4 +1,4 @@
-# 🎟️ Ticket Booking System
+# 🎟️ Event Management App
 
 A full-stack **MERN** (MongoDB, Express, React, Node.js) ticket booking platform for events — concerts, sports, festivals, and more. Features JWT authentication, Google OAuth, real-time seat management, and an admin dashboard.
 
