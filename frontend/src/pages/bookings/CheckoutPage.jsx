@@ -92,7 +92,7 @@ const CheckoutPage = () => {
           bookingId: confirmedOrder._id,
           paymentMethod,
           status: 'success',
-          simulationDetails: { testUpiId: 'instant@tickethub.app' },
+          simulationDetails: { testUpiId: 'instant@eventify.app' },
         })
       );
 

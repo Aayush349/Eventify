@@ -25,7 +25,7 @@ const NotFoundPage = () => {
           transition={{ duration: 3, repeat: Infinity, ease: 'easeInOut' }}
           style={{ fontSize: 'clamp(6rem, 20vw, 10rem)', lineHeight: 1, marginBottom: '1rem' }}
         >
-          🎟️
+          ✨
         </motion.div>
 
         <h1
@@ -44,7 +44,7 @@ const NotFoundPage = () => {
         </h1>
 
         <h2 style={{ color: 'white', marginBottom: '1rem', fontSize: 'clamp(1.25rem, 3vw, 1.75rem)' }}>
-          This ticket doesn't exist!
+          This page doesn't exist!
         </h2>
 
         <p style={{ color: 'rgba(255,255,255,0.6)', fontSize: '1.0625rem', marginBottom: '2.5rem', maxWidth: '400px', margin: '0 auto 2.5rem' }}>

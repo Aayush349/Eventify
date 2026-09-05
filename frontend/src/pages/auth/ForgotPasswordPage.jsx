@@ -47,8 +47,8 @@ const ForgotPasswordPage = () => {
     <div style={{ minHeight: '100vh', background: '#f8fafc', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '2rem' }}>
       <div style={{ maxWidth: '440px', width: '100%' }}>
         <Link to="/" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '2.5rem' }}>
-          <span style={{ fontSize: '1.5rem' }}>🎟️</span>
-          <span style={{ fontFamily: 'var(--font-display)', fontWeight: 800, fontSize: '1.25rem', color: '#0f172a' }}>TicketHub</span>
+          <span style={{ fontSize: '1.5rem' }}>✨</span>
+          <span style={{ fontFamily: 'var(--font-display)', fontWeight: 800, fontSize: '1.25rem', color: '#0f172a' }}>Eventify</span>
         </Link>
 
         <div style={{ background: 'white', border: '1px solid #e2e8f0', borderRadius: '1rem', padding: '2.5rem' }}>

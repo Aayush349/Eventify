@@ -42,7 +42,7 @@ const steps = [
   { step: '01', icon: '🔍', title: 'Discover Events', desc: 'Browse thousands of concerts, sports, and cultural events curated for you.' },
   { step: '02', icon: '💺', title: 'Pick Your Seats', desc: 'Interactive seat maps let you choose exactly where you want to sit.' },
   { step: '03', icon: '💳', title: 'Secure Payment', desc: 'Pay safely with cards, UPI, or wallets. Instant confirmation.' },
-  { step: '04', icon: '🎟️', title: 'Get Your Ticket', desc: 'Download your QR-coded ticket instantly. Show it at the gate.' },
+  { step: '04', icon: '🎟️', title: 'Get Your Ticket', desc: 'Download your QR-coded e-ticket instantly. Show it at the gate.' },
 ];
 
 // ─── Component ────────────────────────────────────────────────────────────────
@@ -98,7 +98,7 @@ const LandingPage = () => {
 
             {/* Headline */}
             <motion.h1 variants={fadeUp} style={{ color: 'white', marginBottom: '1.25rem', lineHeight: 1.1 }}>
-              Book Tickets for
+              Smart Event Management for
               <span className="gradient-text" style={{ display: 'block' }}>
                 Unforgettable Experiences
               </span>
@@ -329,7 +329,7 @@ const LandingPage = () => {
                 Ready to Experience Something Extraordinary?
               </h2>
               <p style={{ color: 'rgba(255,255,255,0.8)', fontSize: '1.0625rem', marginBottom: '2rem', maxWidth: '500px', margin: '0 auto 2rem' }}>
-                Join 2 million+ people who use TicketHub to discover and book the best events.
+                Join 2 million+ people who use Eventify to discover and book the best events.
               </p>
               <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
                 {isAuthenticated && user ? (

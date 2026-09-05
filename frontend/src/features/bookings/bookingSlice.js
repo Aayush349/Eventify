@@ -56,7 +56,7 @@ export const cancelBooking = createAsyncThunk(
   async (id, { rejectWithValue }) => {
     try {
       const res = await cancelBookingAPI(id);
-      toast.success('Ticket booking has been cancelled and seats restored.');
+      toast.success('Booking has been cancelled and seats restored.');
       return res.data.data.booking;
     } catch (err) {
       const msg = err.response?.data?.message || 'Could not cancel booking';

@@ -59,11 +59,11 @@ const Footer = () => {
                 marginBottom: '1rem',
               }}
             >
-              <span>🎟️</span>
-              <span className="gradient-text">TicketHub</span>
+              <span>✨</span>
+              <span className="gradient-text">Eventify</span>
             </Link>
             <p style={{ color: 'rgba(255,255,255,0.5)', fontSize: '0.9rem', lineHeight: 1.7, maxWidth: '280px' }}>
-              Your one-stop platform for discovering and booking tickets to the best events — concerts, sports, theatre, and more.
+              Your smart event management platform for discovering and booking the best events — concerts, sports, theatre, and more.
             </p>
             <div style={{ display: 'flex', gap: '0.75rem', marginTop: '1.25rem' }}>
               {['🐦', '📘', '📸', '💼'].map((icon, i) => (
@@ -133,7 +133,7 @@ const Footer = () => {
         <div style={{ borderTop: '1px solid rgba(255,255,255,0.06)', paddingTop: '1.5rem', display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '1rem' }}>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '0.25rem' }}>
             <p style={{ color: 'rgba(255,255,255,0.35)', fontSize: '0.875rem', margin: 0 }}>
-              © {currentYear} TicketHub. All rights reserved.
+              © {currentYear} Eventify. All rights reserved.
             </p>
             <p style={{ color: 'rgba(255,255,255,0.35)', fontSize: '0.875rem', margin: 0 }}>
               Made by aayush

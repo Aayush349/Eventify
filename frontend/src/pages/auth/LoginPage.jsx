@@ -90,9 +90,9 @@ const LoginPage = ({ defaultPortal = 'customer' }) => {
         className="auth-left-panel"
       >
         <Link to="/" style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '3rem', textDecoration: 'none' }}>
-          <span style={{ fontSize: '2rem' }}>{isAdminPortal ? '👑' : '🎟️'}</span>
+          <span style={{ fontSize: '2rem' }}>{isAdminPortal ? '👑' : '✨'}</span>
           <span style={{ fontFamily: 'var(--font-display)', fontWeight: 800, fontSize: '1.75rem', color: 'white' }}>
-            TicketHub
+            Eventify
           </span>
         </Link>
 
@@ -276,7 +276,7 @@ const LoginPage = ({ defaultPortal = 'customer' }) => {
                 name="email"
                 value={form.email}
                 onChange={handleChange}
-                placeholder={isAdminPortal ? 'admin@tickethub.com' : 'you@example.com'}
+                placeholder={isAdminPortal ? 'admin@eventify.app' : 'you@example.com'}
                 className="input-field"
                 style={errors.email ? { borderColor: '#dc2626' } : {}}
                 autoComplete="email"
@@ -355,7 +355,7 @@ const LoginPage = ({ defaultPortal = 'customer' }) => {
               </p>
             ) : (
               <p>
-                New to TicketHub?{' '}
+                New to Eventify?{' '}
                 <Link to="/auth/register" style={{ color: '#4f46e5', fontWeight: 600 }}>
                   Create Customer Account
                 </Link>

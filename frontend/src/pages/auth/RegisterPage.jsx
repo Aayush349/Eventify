@@ -99,8 +99,8 @@ const RegisterPage = ({ defaultPortal = 'customer' }) => {
         }}
       >
         <Link to="/" style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '3rem', textDecoration: 'none' }}>
-          <span style={{ fontSize: '2rem' }}>{isAdminPortal ? '👑' : '🎟️'}</span>
-          <span style={{ fontFamily: 'var(--font-display)', fontWeight: 800, fontSize: '1.75rem', color: 'white' }}>TicketHub</span>
+          <span style={{ fontSize: '2rem' }}>{isAdminPortal ? '👑' : '✨'}</span>
+          <span style={{ fontFamily: 'var(--font-display)', fontWeight: 800, fontSize: '1.75rem', color: 'white' }}>Eventify</span>
         </Link>
 
         {isAdminPortal ? (

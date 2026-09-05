@@ -62,8 +62,8 @@ const Navbar = () => {
 
         {/* Logo */}
         <Link to="/" id="nav-logo" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', fontFamily: 'var(--font-display)', fontWeight: 800, fontSize: '1.375rem', color: 'white', flexShrink: 0 }}>
-          <span>🎟️</span>
-          <span>TicketHub</span>
+          <span>✨</span>
+          <span>Eventify</span>
         </Link>
 
         {/* Desktop Nav */}
