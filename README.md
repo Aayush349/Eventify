@@ -1,6 +1,6 @@
 # 🎟️ Event Management App
 
-A full-stack **MERN** (MongoDB, Express, React, Node.js) ticket booking platform for events — concerts, sports, festivals, and more. Features JWT authentication, Google OAuth, real-time seat management, and an admin dashboard.
+A full-stack **MERN** (MongoDB, Express, React, Node.js) Event management and booking platform for events — concerts, sports, festivals, and more. Features JWT authentication, Google OAuth, real-time seat management and booking, and an admin dashboard.
 
 ---
 
@@ -110,7 +110,7 @@ The data layer consists of highly normalized interconnected collections:
 
 ### 3. Authentication & Security Workflow
 Security is a first-class citizen in this API:
-*   **Dual Token System**: Implements short-lived JWT Access Tokens (for API authorization) and long-lived Refresh Tokens (stored in HTTP-only, secure cookies to prevent XSS).
+*   **Dual Token System**: Implements short-lived JWT Access Tokens (for API authorization) and long-lived Refresh Tokens (stored in HTTP-only, secure cookies).
 *   **OAuth Integration**: `Passport.js` handles Google OAuth 2.0, automatically provisioning accounts and linking them to existing emails.
 *   **API Defenses**: 
     *   `helmet`: Secures HTTP headers.
@@ -137,8 +137,8 @@ Security is a first-class citizen in this API:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/Ticket-Booking-System.git
-cd Ticket-Booking-System
+git clone https://github.com/Aayush349/Eventify.git
+cd Eventify
 ```
 
 ### 2. Backend Setup
@@ -184,7 +184,6 @@ node src/utils/seedEvents.js
 
 This creates:
 - 🛡️ Default admin account (`admin@admin.com` / `admin123`)
-- 🎪 3 sample events (Coldplay concert, IPL finale, Sunburn festival)
 
 ### 4. Frontend Setup
 
@@ -224,25 +223,6 @@ The app will be running at:
 
 ---
 
-## 🔌 API Endpoints
-
-| Method | Endpoint | Description | Auth |
-|---|---|---|---|
-| `GET` | `/api/v1/health` | Server health check | ❌ |
-| `POST` | `/api/v1/auth/register` | Register new user | ❌ |
-| `POST` | `/api/v1/auth/login` | Login with email/password | ❌ |
-| `GET` | `/api/v1/auth/google` | Google OAuth login | ❌ |
-| `POST` | `/api/v1/auth/refresh-token` | Refresh access token | 🍪 |
-| `GET` | `/api/v1/auth/me` | Get current user profile | ✅ |
-| `POST` | `/api/v1/auth/logout` | Logout & clear cookies | ✅ |
-| `GET` | `/api/v1/events` | List all published events | ❌ |
-| `GET` | `/api/v1/events/:id` | Get event details | ❌ |
-| `POST` | `/api/v1/events` | Create event (organizer) | ✅ |
-| `POST` | `/api/v1/bookings` | Book tickets | ✅ |
-| `GET` | `/api/v1/bookings/my` | User's booking history | ✅ |
-| `GET` | `/api/v1/admin/users` | List all users (admin) | ✅🛡️ |
-| `GET` | `/api/v1/admin/stats` | Dashboard stats (admin) | ✅🛡️ |
-
 ---
 
 ## 🔑 Default Credentials
@@ -251,19 +231,6 @@ The app will be running at:
 |---|---|---|
 | Admin | `admin@admin.com` | `admin123` |
 
-> ⚠️ Change the admin password after first login in production!
-
----
-
-## 🌐 Deployment (Render)
-
-This project includes a `render.yaml` blueprint for one-click deployment:
-
-1. Push your code to GitHub
-2. Go to [Render Dashboard](https://dashboard.render.com) → **New** → **Blueprint**
-3. Connect your repo and select the `render.yaml`
-4. Set the required environment variables in Render's dashboard
-5. Deploy!
 
 ---
 
@@ -273,4 +240,3 @@ ISC
 
 ---
 
-<p align="center">Built with ❤️ using the MERN Stack</p>
